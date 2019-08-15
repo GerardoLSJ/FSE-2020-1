@@ -1,0 +1,48 @@
+Nombre:
+	López Santibáñez Jiménez Luis Gerardo 
+	Ortiz Figueroa María Fernanda
+	Robles Uribe Karen Abril
+
+Respuestas a las preguntas de la práctica:
+
+a. ¿Cuál es la razón principal de usar Linux en el diseño de 
+sistemas embebidos?
+
+La principal razón de usar Linux es por su portabilidad sobre 
+cualquier arquitectura de cualquier dispositivo de hardware
+(x86,MIPS,ARM, entre otro).
+
+Por otro lado, es estable, de código abierto, tiene disponibilidad de 
+diversos controladores para periféricos y el soporte de muchos protocolos
+de red y filesystems.
+
+b. Investigue los métodos (formas) para conectarse a un Raspberry Pi?
+
+
+Conexión por SSH.
+
+En muchas de las distribuciones Linux (especialmente aquellas pensadas para una administración remota, como Raspbian, el SO del Raspberry Pi) las conexiones SSH están habilitadas por defecto.
+
+En el ordenador cliente, desde el que nos vamos a conectar, si es otro sistema Linux podemos utilizar la propia terminal para establecer la conexión, pero si es Windows tendremos que recurrir a aplicaciones como «Putty» para ello.
+
+Además, el protocolo SSH también nos permite hacer uso del protocolo SFTP para poder acceder a todos los archivos almacenados en el servidor a través del protocolo FTP de forma segura y cifrada.
+
+
+VNC (Virtual Network Computing)
+
+VNC es un sistema de uso compartido de escritorio gráfico que le permite controlar de forma remota la interfaz de escritorio de una computadora (ejecutando VNC Server) desde otra computadora o dispositivo móvil (ejecutando VNC Viewer). VNC Viewer transmite el teclado y el mouse o los eventos táctiles al servidor VNC y, a cambio, recibe actualizaciones en la pantalla.
+
+Verá el escritorio de la Raspberry Pi dentro de una ventana en su computadora o dispositivo móvil. Podrás controlarlo como si estuvieras trabajando en la Raspberry Pi.
+
+En el ordenador cliente, desde el que nos vamos a conectar, podemos utilizar cualquier cliente, como, por ejemplo, TightVNC.
+
+
+RDP
+RDP es el protocolo propietario de Microsoft que nos permite conectarnos de forma remota a cualquier ordenador con Windows y administrarlo fácilmente sin depender de otras aplicaciones. Aunque esta herramienta viene instalada por defecto en todos los Windows, si queremos utilizarla desde otros sistemas operativos, como Linux, es necesario instalar la versión no oficial del protocolo de manera que podamos establecer conexión con él.
+
+Una vez instalada ya vamos a poder conectarnos a este protocolo desde cualquier otro ordenador o dispositivo, tanto utilizando los clientes oficiales de Microsoft como los clientes de terceros.
+
+https://www.raspberrypi.org/documentation/remote-access/
+https://www.raspberrypi.org/documentation/remote-access/vnc/
+https://www.raspberrypi.org/documentation/remote-access/ssh/README.md
+
