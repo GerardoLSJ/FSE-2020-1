@@ -1,4 +1,4 @@
-FSE 2020-1 -- Practica 3
+FSE 2020-1 -- Practica 2
 
 Nombres de los integrantes:
 	López Santibáñez Jiménez Luis Gerardo 
@@ -8,6 +8,61 @@ Nombres de los integrantes:
 
 Comentarios y Respuestas a las preguntas 
 
-(a) Cual es la diferencia entre las instrucciones swi 0x0, svc #0 y bx lr?
-(b) A que se refiere la instruccion .balign 4 en el lenguaje ensamblador para ARM?
-(c) Cuantas instrucciones en lenguaje ensamblador hay para la arquitectura ARM11 y cuantos modos de direccionamiento hay (nombrelos)?
+a) ¿Cuál es la diferencia entre las instrucciones swi 0x0, svc #0 y bx lr?
+
+	* swi 0x0
+	(Interrupción de software)
+	Instrucción de interrupción definida por el usuario para comunicarnos con dispositivos externos, como 
+	el monitor. Los códigos SWI numerados entre 0 y 255 están reservados para 
+	instrucciones básicas para I/O. La swi 0x0 indica que se muestre.
+	
+	* svc #0
+	(Llamada al supervisor/servicio)
+	Genera un excepción en el sistema que pone al procesador inmediatamente
+	cuando es invocada en modo privilegiado, se pueden recibir parámetros 
+	que pueden ser utilizados en la subrutina del controlador SVC. 
+	
+	En otras palabras, el número es ignorado por el procesador, sin embargo, 
+	el controlador de excepciones lo recupera para determinar el servicio 
+	que solicita.
+	
+	* bx lr
+	(Valor de retorno de la excepción)
+	bx -> Provoca una bifurcación a la dirección contenida en lr.
+	lr -> Almacena la dirección de retorno de una subrutina o llamada de función.
+
+	Al entrar a un subrutina, la dirección a la cual tiene que regresar al procesador
+	se guarda en el registo LR, luego de que se finaliza la interrupción de la
+	subrutina se regresa al programa interrumpido BX LR.
+	
+	En general, podemos decir que SWI 0x0 y SVC son la misma instrucción, solo que
+	con las versiones se cambio de nombre.
+	
+	Ahora bien, nos damos cuenta que las dos primeras instrucciones generan una
+	excepción, la atienden y se sigue con el flujo de instrucciones, mientras que
+	la última instrucción, se usa para regresar a una determina dirección al
+	entrar en una interrupción.
+	
+	http://infocenter.arm.com/help/index.jsp?topic=%2Fcom.arm.doc.dui0489i%2FCjafgdih.html&fbclid=IwAR1ahjpVoTNTL-gyANULoZXf7eSutjTQIGzQSYTEdePZUjN0J3KjRQlnDSE
+	https://rei.iteso.mx/bitstream/handle/11117/5542/SCHEDULER+DE+SUCESI%D3N+BINARIA+CON+CAMBIO+DE+CONTEXTO.pdf;jsessionid=B4893A8F35633C39954AC9B59E7F566B?sequence=2
+	
+b) ¿A que se refiere la instrucción .balign 4 en el lenguaje ensamblador para ARM?
+
+La directiva .balign N le indica al ensamblador que el siguiente dato que vaya a
+reservarse o inicializarse, debe comenzar en una dirección de memoria múltiplo 
+de N.
+
+http://repositori.uji.es/xmlui/bitstream/handle/10234/174328/s129.pdf?sequence=1&isAllowed=y
+
+c) Cuántas instrucciones en lenguaje ensamblador hay para la arquitectura ARM11 y 
+cuantos modos de direccionamiento hay (nombrelos)?
+
+La arquitectura ARM11 aproximadamente tiene 200 intrucciones en lenjuage ensamblador.
+
+La arquitectura ARM11 tiene 5 tipos de direccionamientos:
+* Direccionamiento directo a registro
+* Direccionamiento inmediato a registro
+* Direccionamiento relativo a registro con desplazamiento
+* Direccionamiento relativo a registro con registro de desplazamiento
+* Direccionamineto en las instrucciones de salto incondicional y condicional 
+
