@@ -2,17 +2,20 @@
 	.global _start
 
 _start:
-	mov	r7,#4		@ Cargamos la constante 4 al registro 7
-	mov	r0,#1		@ Cargamos la constante 1 al registro 0
-	ldr	r1,=message	@ Cargamos el valor de la memoria al registro
-	mov 	r2,#17		@ Cargamos la constante 14 al registro 2
-	svc	#0		@ Supervisor de llamadas que guarda el contenido de los registros temporalmente
-	mov 	r3, #1
-	mov	r7,#1		@ Cargamos la constante 1 al registro 7
-	mov	r0,#0		@ Cargamos la constante 0 al registro 0
-	svc	#0		@ Supervisor de llamadas que gusrda el contenido de los registros temporalmente
+	mov	r7,#4		@ r7 y r0 son utilizados por el sistema operativo
+	mov	r0,#1		@ para determinar que funcion queremos llamar - imprimir -
+				@ r1 y r2 son utilizados para pasar parametros a una funcion
+	ldr	r1,=message	@ Se indica la ubicacion de la memoria del primer byte
+				@ de la cadena que queremos imprimir
+	mov 	r2,#17		@ Se indica el numero de caracteres de la cadena
+	svc	#0		@ Se indica un interrupcion, ve los valores r0 y r7 y reconoce
+				@ la solicitud de ejecucion de la funcion imprimir lo hace y
+				@ regresa de la interrupcion
+	mov	r7,#1		@ Ahora r7 y r0 son utilizados para indicarle al sistema
+	mov	r0,#0		@ operativo que quiete el control del programa, es decir,
+	svc	#0		@ salir del programa y  se indica de nuevo una interrupcion
+
        .data
 
 message:
-@       .ascii "Hola mundo\n"
-	.ascii "FSE2020-1 is cool"
+       .ascii "FSE2020-1 is cool\n"
