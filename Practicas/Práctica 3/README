@@ -1,1 +1,42 @@
+Práctica 3 Raspberry - Manejo de terminales GPIO
+
+Integrantes:
+	López Santibáñez Jiménez Luis Gerardo 
+	Ortiz Figueroa María Fernanda
+	Robles Uribe Karen Abril
+  
+Descripción:
+	Configuración y programación de las terminales de I/O de propósito general 
+  (GPIO) de la Raspberry, de tal forma que:
+    - Puerto de entrada
+      Lectura del estado de un botón externo.
+    - Puerto de salida
+      Parpadeo de un LED a 1 Hz y a 50% del ciclo de trabajo.
+
+Cuestionario:
+
+a) ¿Cuántas formas de configurar y programar hay disponibles en la Raspberry?
+    Existen diversas formas de configurar y programar en una Raspberry, como 
+    lo puede ser: Python, Sonic Pi, Java, JavaScript, Scratch, entre otros más.
+    
+b) ¿Qué es el sistema de archivos sysfs?
+    El sistema de archivos sysfs es un pseudo-sistema de archivos que proporciona 
+    una interfaz a las estructura de datos del núcleo.
+    
+    Los archivos sysfs proporcionan información sobre dispositivos, módulos del 
+    núcleo, sistemas de archivos y otros componentes del núcleo.
+    
+    http://man7.org/linux/man-pages/man5/sysfs.5.html
+    
+c) ¿Cuáles son los lenguajes de programación más comunes para configurar y programar los GPIO?
+    Los lenguajes de programación más comunes para configurar y programas GPIO son:
+      - Python
+      - C
+      - C++
+      - Java
+      - Arduino
+      - Consola a través de scripts y comandos
+      - Entre otros más.
+      
+
 
