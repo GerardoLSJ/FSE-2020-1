@@ -1,1 +1,18 @@
+Práctica 1 ESP32 - Comunicación UART con PC
 
+Integrantes:
+	López Santibáñez Jiménez Luis Gerardo 
+	Ortiz Figueroa María Fernanda
+	Robles Uribe Karen Abril
+  
+Descripción:
+  Comunicación entre el microcontrolador ESP32 y la PC vía UART, de tal forma que:
+    - Desde la PC se envia un comando (presionar letra "e") para encender un LED.
+    - Desde la PC se envia un comando (presionar letra "a") para apagar un LED.
+    - Lectura del estado de un botón externo el cual se muestra en la PC.
+    
+Vídeo:
+  https://drive.google.com/file/d/1PpKVsSOKn-1950XBbBnY8dnC_M5DPf5W/view?usp=sharing
+  https://drive.google.com/file/d/1PpKVsSOKn-1950XBbBnY8dnC_M5DPf5W/view?usp=sharing
+  
+  
