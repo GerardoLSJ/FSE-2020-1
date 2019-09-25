@@ -1,0 +1,27 @@
+Fundamentos de Sistemas Embebidos PRACTICA 4
+
+Nombres:
+	López Santibáñez Jiménez Luis Gerardo
+	Ortiz Figueroa María Fernanda
+	Robles Uribe Karen Abril
+
+Objetivo:
+El alumno conocerá la configuración, la programación y el uso del módulo UART (Universal Asynchronous Receiver Transmitter) para implementar comunicaciones de tipo serial, particularmente bajo el estándar RS-232.
+
+Descripción de la práctica:
+
+	1. Para la primera actividad de la práctica se tuvo que coonectar el convertidor USB-TTL con la raspberry pi de formq que las terminales Tx se conectaran con la RX del otro dispositivo y con las tierras en común. Posteriormente, mediante el emulador de terminat Termite se hicieron las configuraciones para el puerto COM (COM6 en este caso) con un baudaje de 115200.
+
+	El código, realizado en python, básicamente consiste en abrir un puerto /dev/ttyS0 mediante la función Serial() para después comenzar a escribir vía UART (función write()) la frase:
+
+		'i': FSE 2020-1 Comunicacion UART RPi - FSE
+
+	Donde 'i' es un número del 0 al 15. Esto se logró mediante un ciclo for.
+
+	2. La segunda parte de la practica consiste en unas implementaciones extras a la idea anterior pues también se debérá abrir el mismo puerto y, esta vez, se hará uso de un ciclo while para estar a 'la escucha' de la información que se va a recibir. Esto se hace con la función read().
+
+	Debido a que se recibe una cadena separada por comas, podemos usar la función split para separarla y asignar los valores correspondientes a ciertas variables (sólo por claridad) para despúés imprimir la información con el formato adecuado mediante la función write()
+
+Link del video:
+
+	--
