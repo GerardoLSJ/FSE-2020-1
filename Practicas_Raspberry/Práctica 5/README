@@ -1,0 +1,19 @@
+Fundamentos de Sistemas Embebidos PRACTICA 5
+
+Nombres:
+	López Santibáñez Jiménez Luis Gerardo
+	Ortiz Figueroa María Fernanda
+	Robles Uribe Karen Abril
+
+Objetivo:
+El alumno conocerá la configuración, la programación y el uso del módulo I2C.
+
+Descripción de la práctica:
+
+	1. Se implementó un código en python que permitiera crear un archivo '.csv' con un nombre obtenido por línea de comandos para, posteriormente,
+		escribir sobre este 'n' veces la frase 'i',Hola USB,data'i', con i desde 0 hasta 'n'. El archivo se guarda en una memoria USB.
+		Para usar I2C se deben realizar unas configuraciones previas en la raspberry.
+
+Link del video:
+
+	--
