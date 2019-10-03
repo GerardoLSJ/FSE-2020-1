@@ -1,0 +1,21 @@
+Fundamentos de Sistemas Embebidos PRACTICA 6
+
+Nombres:
+	López Santibáñez Jiménez Luis Gerardo
+	Ortiz Figueroa María Fernanda
+	Robles Uribe Karen Abril
+
+Objetivo:
+Por medio del reloj DS1307 el alumno se comunicara para recibir la hora desde este reloj
+en tiempo real.
+
+Descripción de la práctica:
+
+	1. Se recibe el nombre del archivo que se creara, se define la estructura del archivo CSV utilizando 
+	csv.DictWriter y se procede a inicializar el modulo ds1307 en la direccion de I2C 0x68 con la fecha actual.
+	posteriormente se escribe en un archivo desde la Raspberry y desde la fecha leída por el modulo ds1307
+	con la funcion ds1307.read_datetime()
+
+
+Link del video:
+https://www.youtube.com/watch?v=01656lBVWpQ&feature=youtu.be

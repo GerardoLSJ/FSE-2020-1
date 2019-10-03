@@ -10,7 +10,7 @@ El alumno conocerá la configuración, la programación y el uso del módulo UAR
 
 Descripción de la práctica:
 
-	1. Para la primera actividad de la práctica se tuvo que coonectar el convertidor USB-TTL con la raspberry pi de formq que las terminales Tx se conectaran con la RX del otro dispositivo y con las tierras en común. Posteriormente, mediante el emulador de terminat Termite se hicieron las configuraciones para el puerto COM (COM6 en este caso) con un baudaje de 115200.
+	1. Para la primera actividad de la práctica se tuvo que conectar el convertidor USB-TTL con la raspberry pi de formq que las terminales Tx se conectaran con la RX del otro dispositivo y con las tierras en común. Posteriormente, mediante el emulador de terminat Termite se hicieron las configuraciones para el puerto COM (COM6 en este caso) con un baudaje de 115200.
 
 	El código, realizado en python, básicamente consiste en abrir un puerto /dev/ttyS0 mediante la función Serial() para después comenzar a escribir vía UART (función write()) la frase:
 
@@ -24,4 +24,5 @@ Descripción de la práctica:
 
 Link del video:
 
-	--
+Link del video:
+https://www.youtube.com/watch?v=F45gaP3b2dQ&feature=youtu.be
