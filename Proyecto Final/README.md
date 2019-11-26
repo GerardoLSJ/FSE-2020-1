@@ -25,3 +25,6 @@ Descripción:
     *****
          Suponemos que se requiere enviar mensajes cada hora (1 minuto por 
          fines prácticos) con la temperatura sensada en ese momento
+
+Video:
+https://youtu.be/9x1PSP11g5M

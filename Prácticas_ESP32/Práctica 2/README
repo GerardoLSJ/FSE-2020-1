@@ -1,1 +1,22 @@
+ Práctica 2 ESP32 - PRIMER EXAMEN PARCIAL
+    Comunicación UART en un sistema embebido
 
+Alumnos:
+     López Santibáñez Jiménez Luis Gerardo
+     Ortiz Figueroa María Fernanda
+     Robles Uribe Karen Abril
+
+Asignatura:
+     Fundamentos de Sistemas Embebidos
+
+Descripción:
+     Lectura de temperatura a través de un GPIO de la ESP32
+     proveniente del sensor LM335 (10mV/K°), por lo que se
+     lee el valor en mV,de tal forma que se hace lo siguiente
+     ** Conversión para tener la temperatura en Kelvin y Centigrados
+     para enviar vía UART del ESP32 a la Computadora.
+     ** Transmisión de la temperatura en voltage vía UART de la
+     ESP32 a la Raspberry.
+
+Vídeo:
+https://youtu.be/sQaNz2E5z-s
